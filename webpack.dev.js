@@ -10,7 +10,7 @@ let devConfig = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
     },
-    devtool: 'inline-source-map', // 开发阶段开启 sourcemap
+    devtool: 'inline-source-map',
     devServer: {
         clientLogLevel: 'warning', // 可能的值有 none, error, warning 或者 info（默认值)
         hot: true, // 启用 webpack 的模块热替换特性, 这个需要配合： webpack.HotModuleReplacementPlugin插件
