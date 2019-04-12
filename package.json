@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/aresun/Resume/issues"
   },
-  "homepage": "https://github.com/aresun/Resume#readme"
+  "homepage": "https://github.com/aresun/Resume#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
 }
