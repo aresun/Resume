@@ -30,16 +30,16 @@ function addImgs() {
     let len = sources.length;
     let i = 0;
     for (; i !== len; i++) {
-        appendPic(sources[i], imgs[i]);
+        appendPic(sources[i], imgs[i]); // one li, one image
     }
 }
 addImgs();
 
-function appendBriefs(d,i){
+function appendBriefs(b){
     let target = document.getElementById('brief').getElementsByClassName('left')[0].getElementsByTagName('ul')[0];
     let dom;
     let frag = document.createDocumentFragment();
-    for(let brief of briefIntro){
+    for(let brief of b){
         dom = document.createElement('li');
         dom.textContent = brief;
         dom.insertBefore(document.createElement('div'),dom.childNodes[0]);
@@ -47,4 +47,17 @@ function appendBriefs(d,i){
     }
     target.appendChild(frag);
 }
-appendBriefs();
+appendBriefs(briefIntro);
+
+function appendSkills(sks){
+    /* add default description(for s.description) */
+    let frag = document.createDocumentFragment();
+    for(let s of sks){
+        /* add all tags(for s.name) */
+        let dom = document.createElement('span');
+        dom.textContent = s.name;
+        frag.appendChild(dom);
+    }
+    document.getElementById('skills').getElementsByTagName('ul')[0].appendChild(frag);
+}
+appendSkills(skills);
