@@ -8,12 +8,12 @@ module.exports = {
         alias: { // 配置别名
             '@': path.resolve(__dirname, 'src/')
         },
-        extensions: [".js", ".vue", ".json"] // 默认值: [".js",".json"]  模块名字可以省略的后缀名
+        // extensions: [".js", ".vue", ".json"] // 默认值: [".js",".json"]  模块名字可以省略的后缀名
     },
-    externals: {  // 把一个模块做成外部依赖，不会打包到 js文件中。
-        jquery: 'jQuery',
-        lodash: '_'
-    },
+    // externals: {  // 把一个模块做成外部依赖，不会打包到 js文件中。
+    //     jquery: 'jQuery',
+    //     lodash: '_'
+    // },
     module: {
         rules: [
             {
