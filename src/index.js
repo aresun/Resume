@@ -1,5 +1,5 @@
 import { l } from './js/common';
-import { briefIntro } from './js/data';
+import { briefIntro, skills } from './js/data';
 
 import './sass/page.scss';
 import emailImg from './img/email.png';
