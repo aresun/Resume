@@ -1,0 +1,25 @@
+$border: 1px solid gold;
+
+$page-width: 1050px;
+$page-height: 1485px;
+$page-to-top: 100px;
+$page-padding-top: 60px;
+
+$brief-right-list-height: 27px;
+$left-width: 600px;
+$right-width: 300px;
+$section-width: $left-width+$right-width;
+
+$h3-title-top: 30px;
+
+@mixin showBorder {
+    border: $border;
+    box-sizing: border-box;
+}
+@mixin showBack {
+    background-color: #ff2288;
+}
+@mixin color-border($color) {
+    border: 1px solid $color;
+    box-sizing: border-box;
+}

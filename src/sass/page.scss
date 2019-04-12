@@ -1,0 +1,90 @@
+@import './common';
+@import './variables';
+
+body {
+    text-align: center;
+}
+#page {
+    width: $page-width;
+    height: $page-height;
+    display: inline-block;
+    margin-top: $page-to-top;
+    @include color-border(#000000);
+    padding: $page-padding-top 30px;
+    &>.section{
+        display: inline-block;
+        // @include showBorder();
+        width: $section-width;
+        &#brief>div{
+            display: inline-block;
+            vertical-align: middle;
+            // @include showBorder;
+            &.left {
+                text-align: left;
+                width: $left-width;
+                &>h3{
+                    padding-bottom: 15px;
+                    padding-top: 10px;
+                }
+                &>ul>li{
+                    font-size: 15px;
+                    &>div { // dot
+                        display: inline-block;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: #000000;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &.right {
+                text-align: right;
+                width: $right-width;
+            }
+            &.right li{
+                font-size: 16px;
+                line-height: $brief-right-list-height;
+            }
+            &.right li>img{
+                width: 25px;
+                line-height: $brief-right-list-height;
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+        }
+        &>h3{
+            margin-top: $h3-title-top;
+            width: $section-width;
+            // @include showBorder;
+            border-top: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+            // @include showBack;
+            display: inline-block;
+            position: relative;
+            &>span:first-child {
+                position: relative;
+                font-size: 16px;
+                transition: all 200ms ease;
+                left: 0px;
+                &+span {
+                    transition: all 200ms ease;
+                    position: absolute;
+                    left: 10px;
+                }
+            }
+            &:hover {
+                background-color: #000000;
+                >span:first-child {
+                    color: #ffffff;
+                    left: -360px;
+                    &+span {
+                        color: #ffffff;
+                        left: 870px;
+                    }
+                }
+            }
+        }
+    }
+}

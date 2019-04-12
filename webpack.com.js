@@ -5,9 +5,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     resolve: {
-        alias: { // 配置别名
-            '@': path.resolve(__dirname, 'src/')
-        },
+        // alias: { // 配置别名
+        //     '@': path.resolve(__dirname, 'src/')
+        // },
         // extensions: [".js", ".vue", ".json"] // 默认值: [".js",".json"]  模块名字可以省略的后缀名
     },
     // externals: {  // 把一个模块做成外部依赖，不会打包到 js文件中。
@@ -17,36 +17,42 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            },
+            {
                 test: /\.(png|svg|jpg|gif|jpeg)$/,
-                include: [path.resolve(__dirname, 'src/')],
+                include: [path.resolve(__dirname, 'src/img/')],
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
                             limit: 10000
                         }
-                    }, {
-                        loader: 'image-webpack-loader',
-                        options: {
-                            mozjpeg: {
-                                progressive: true,
-                                quality: 65
-                            },
-                            optipng: {
-                                enabled: false
-                            },
-                            pngquant: {
-                                quality: '65-90',
-                                speed: 4
-                            },
-                            gifsicle: {
-                                interlaced: false
-                            },
-                            webp: {
-                                quality: 75
-                            }
-                        }
                     }
+                    // {
+                    //     loader: 'image-webpack-loader',
+                    //     options: {
+                    //         mozjpeg: {
+                    //             progressive: true,
+                    //             quality: 65
+                    //         },
+                    //         optipng: {
+                    //             enabled: false
+                    //         },
+                    //         pngquant: {
+                    //             quality: '65-90',
+                    //             speed: 4
+                    //         },
+                    //         gifsicle: {
+                    //             interlaced: false
+                    //         },
+                    //         webp: {
+                    //             quality: 75
+                    //         }
+                    //     }
+                    // }
                 ]
             }
         ]
