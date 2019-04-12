@@ -17,15 +17,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
-                exclude: /(node_modules)/, // 加快编译速度，不包含node_modules文件夹内容
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        cacheDirectory: true
-                    }
-                }
-            }, {
                 test: /\.(png|svg|jpg|gif|jpeg)$/,
                 include: [path.resolve(__dirname, 'src/')],
                 use: [

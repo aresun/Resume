@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const merge = require('webpack-merge');
-const common = require('./webpack.common');
+const comConfig = require('./webpack.com');
 
 let prodConfig = {
     mode: 'production',
@@ -54,4 +54,4 @@ let prodConfig = {
     }
 };
 
-module.exports = merge(common, prodConfig);
+module.exports = merge(comConfig, prodConfig);

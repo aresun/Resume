@@ -8,7 +8,7 @@
     "build": "npx webpack --config webpack.dev.js",
     "watch": "npx webpack --watch --config webpack.dev.js",
     "start": "npx webpack-dev-server --config webpack.dev.js",
-    "dist": "npx webpack --config webpack.prod.js"
+    "dist": "npx webpack --config webpack.prd.js"
   },
   "repository": {
     "type": "git",

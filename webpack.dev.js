@@ -1,6 +1,6 @@
 const path = require('path');
 const merge = require('webpack-merge');
-const common = require('./webpack.common');
+const comConfig = require('./webpack.com');
 const webpack = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -71,10 +71,10 @@ let devConfig = {
         ]
     },
     plugins: [
-        new BundleAnalyzerPlugin(), // 打包模块报表
-        new webpack.NamedModulesPlugin(), // 更容易查看(patch)的依赖
+        // new BundleAnalyzerPlugin(), // 打包模块报表
+        // new webpack.NamedModulesPlugin(), // 更容易查看(patch)的依赖
         new webpack.HotModuleReplacementPlugin() // 替换插件
     ]
 }
 
-module.exports = merge(common, devConfig);
+module.exports = merge(comConfig, devConfig);
