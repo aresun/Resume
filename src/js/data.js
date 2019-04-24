@@ -74,7 +74,7 @@ let workExperiences = [
 ];
 
 let university = {
-  major: "计算机科学与技术",
+  major: "计算机科学与技术专业",
   university: "湖南农业大学东方科技学院",
   time: "09/2009 - 06/2013"
 };

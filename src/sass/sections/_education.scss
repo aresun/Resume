@@ -1,0 +1,20 @@
+div#education {
+  & > div.university {
+    // @include showBorder;
+    & > h5:first-child {
+      // major
+      font-size: 16px;
+      padding-bottom: 2px;
+      & + h5 {
+        // university
+        font-weight: normal;
+        padding-bottom: 2px;
+        & + p {
+          font-size: 13px;
+          font-style: italic;
+          color: #777777;
+        }
+      }
+    }
+  }
+}
