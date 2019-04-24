@@ -1,4 +1,4 @@
-export const MAXSPEED = 3;
+export const MAXSPEED = 2;
 export const brief = document.getElementById("brief");
 export const briefDescriptionListContainer = brief
   .getElementsByClassName("left")[0]
