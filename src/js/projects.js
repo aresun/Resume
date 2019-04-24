@@ -18,6 +18,7 @@ function addProjects() {
     let pNameDom = createDomWithText("span", project.name);
     let pNameLinkDom = createDomWithText("a", "[\u27A5]");
     pNameLinkDom.href = `https://aresun.github.io/${project.name}/`;
+    pNameLinkDom.target = "_blank";
     pNameDom.appendChild(pNameLinkDom);
     titleContainer.appendChild(pNameDom);
 
