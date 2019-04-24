@@ -1,0 +1,47 @@
+#skills {
+  & > ul {
+    display: inline-block;
+    width: $section-width;
+    & > span {
+      // name tags
+      background-color: #0055bb;
+      color: #ffffff;
+      display: inline-block;
+      width: $skills-tag-width;
+      padding: 6px 0;
+      border-radius: 6px;
+      margin-right: $skills-tag-margin-single-side;
+      user-select: none;
+      margin-bottom: 10px;
+      transition: all 200ms ease;
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+      &:hover {
+        background-color: #ff4466;
+        box-shadow: 0 0 6px 1px #999999;
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+    & + div {
+      // subscript container
+      margin-top: 16px;
+      display: inline-block;
+      width: $section-width;
+      height: 100px;
+      border-radius: 6px;
+      background-color: #fafafa;
+      position: relative;
+      overflow: hidden;
+      & > span {
+        // descriptions
+        font-size: 12px;
+        display: inline-block;
+        width: 300px;
+        text-align: left;
+        user-select: none;
+      }
+    }
+  }
+}

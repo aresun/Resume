@@ -14,4 +14,9 @@ function getStyle(element, attr) {
         return getComputedStyle(element, null)[attr];
     }
 }
-export { l, randomInt, getStyle };
+function createDomWithText(tagName, text) {
+    let result = document.createElement(tagName);
+    result.textContent = text;
+    return result;
+}
+export { l, randomInt, getStyle, createDomWithText };

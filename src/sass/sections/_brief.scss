@@ -1,0 +1,40 @@
+#brief > div {
+  display: inline-block;
+  vertical-align: middle;
+  // @include showBorder;
+  &.left {
+    text-align: left;
+    width: $left-width;
+    & > h3 {
+      padding-bottom: 15px;
+      padding-top: 10px;
+    }
+    & > ul > li {
+      font-size: 15px;
+      & > div {
+        // dot
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #000000;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+  &.right {
+    text-align: right;
+    width: $right-width;
+  }
+  &.right li {
+    font-size: 16px;
+    line-height: $brief-right-list-height;
+  }
+  &.right li > img {
+    width: 25px;
+    line-height: $brief-right-list-height;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}

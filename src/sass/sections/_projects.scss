@@ -1,0 +1,64 @@
+#projects {
+  & > h3 + div.project ~ div.project {
+    margin-top: $h3-title-bottom;
+    // @include showBorder;
+  }
+  & > div.project {
+    & > div:first-child {
+      // * project title
+      //   @include showBorder;
+      padding: 0 10px;
+      &::after {
+        @include innerClearfix;
+      }
+      & > span {
+        // common
+        // @include showBorder;
+        display: block;
+        // width: 100px;
+        &:first-child {
+          // title
+          float: left;
+          & + span {
+            // title value
+            float: right;
+            position: relative; // for link to show when hover
+            font-weight: 900;
+            & > a {
+              font-weight: normal;
+              color: #00b7ff;
+            }
+          }
+        }
+      }
+      & + div {
+        // technologies
+        // @include showBorder;
+        padding: 10px 10px;
+        text-align: left;
+        > span {
+          // tech as tag
+          display: inline-block;
+          border-radius: 3px;
+          margin: 0 6px;
+          padding: 1px 8px;
+          font-size: 13px;
+          background-color: #eeeeee;
+        }
+        & + ul {
+          // project descriptions
+          padding-left: 12px;
+          & > li {
+            text-align: left;
+            padding: 3px 0;
+            list-style: disc;
+            list-style-position: inside;
+            font-size: 13px;
+            font-weight: 600;
+            // @include showBorder;
+          }
+        }
+      }
+    }
+  }
+}

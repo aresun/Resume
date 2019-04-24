@@ -8,21 +8,28 @@ $page-padding-top: 60px;
 $brief-right-list-height: 27px;
 $left-width: 600px;
 $right-width: 300px;
-$section-width: $left-width+$right-width;
+$section-width: $left-width + $right-width;
 
 $h3-title-top: 30px;
 $h3-title-bottom: 20px;
 $skills-tag-margin-single-side: 10px;
 $skills-tag-width: 172px;
 
+$tech-width: 130px;
 @mixin showBorder {
-    border: $border;
-    box-sizing: border-box;
+  border: $border;
+  box-sizing: border-box;
 }
 @mixin showBack {
-    background-color: #ff2288;
+  background-color: #ff2288;
 }
 @mixin color-border($color) {
-    border: 1px solid $color;
-    box-sizing: border-box;
+  border: 1px solid $color;
+  box-sizing: border-box;
+}
+
+@mixin innerClearfix {
+  content: "";
+  display: block;
+  clear: both;
 }

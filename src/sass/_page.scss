@@ -1,0 +1,43 @@
+#page {
+  width: $page-width;
+  height: $page-height;
+  display: inline-block;
+  margin-top: $page-to-top;
+  @include color-border(#000000);
+  padding: $page-padding-top 30px;
+  & > .section {
+    display: inline-block;
+    width: $section-width;
+    &:hover > h3 {
+      background-color: #000000;
+      > span:first-child {
+        color: #ffffff;
+        left: -330px;
+        & + span {
+          color: #ffffff;
+          left: 870px;
+        }
+      }
+    }
+    & > h3 {
+      margin-top: $h3-title-top;
+      margin-bottom: $h3-title-bottom;
+      width: $section-width;
+      border-top: 2px solid #000000;
+      border-bottom: 2px solid #000000;
+      display: inline-block;
+      position: relative;
+      & > span:first-child {
+        position: relative;
+        font-size: 16px;
+        transition: all 200ms ease;
+        left: 0px;
+        & + span {
+          transition: all 200ms ease;
+          position: absolute;
+          left: 10px;
+        }
+      }
+    }
+  }
+}
