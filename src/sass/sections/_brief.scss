@@ -11,16 +11,8 @@
     }
     & > ul > li {
       font-size: 15px;
-      & > div {
-        // dot
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background-color: #000000;
-        vertical-align: middle;
-        margin-right: 10px;
-      }
+      list-style: disc;
+      list-style-position: inside;
     }
   }
   &.right {
