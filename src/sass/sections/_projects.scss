@@ -6,48 +6,50 @@
   & > div.project {
     & > div:first-child {
       // * project title
-      //   @include showBorder;
-      padding: 0 10px;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 6px;
       &::after {
         @include innerClearfix;
       }
       & > span {
         // common
-        // @include showBorder;
         display: block;
-        // width: 100px;
         &:first-child {
           // title
+          font-family: "Ropa Sans", "Microsof Yahei";
           float: left;
           & + span {
             // title value
             float: right;
             position: relative; // for link to show when hover
             font-weight: 900;
+            vertical-align: middle;
             & > a {
               font-weight: normal;
-              color: #00b7ff;
+              color: $github-link-color;
+              font-size: 12px;
             }
           }
         }
       }
       & + div {
         // technologies
-        // @include showBorder;
-        padding: 10px 10px;
         text-align: left;
         > span {
           // tech as tag
+          font-family: "Ropa Sans", "Microsof Yahei";
           display: inline-block;
           border-radius: 3px;
           margin: 0 6px;
           padding: 1px 8px;
           font-size: 13px;
           background-color: #eeeeee;
+          &:first-child {
+            margin-left: 0px;
+          }
         }
         & + ul {
           // project descriptions
-          padding-left: 12px;
           & > li {
             text-align: left;
             padding: 3px 0;

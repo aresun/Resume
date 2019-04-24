@@ -2,8 +2,10 @@
   & > ul {
     display: inline-block;
     width: $section-width;
+    // @include showBorder;
     & > span {
       // name tags
+      font-family: "Ropa Sans", "Microsof Yahei";
       background-color: #0055bb;
       color: #ffffff;
       display: inline-block;
@@ -26,7 +28,7 @@
     }
     & + div {
       // subscript container
-      margin-top: 16px;
+      margin-top: 10px;
       display: inline-block;
       width: $section-width;
       height: 100px;
@@ -38,6 +40,7 @@
         // descriptions
         font-size: 12px;
         display: inline-block;
+        font-family: "Ropa Sans", "Microsof Yahei";
         width: 300px;
         text-align: left;
         user-select: none;

@@ -6,18 +6,19 @@ $page-to-top: 100px;
 $page-padding-top: 60px;
 $page-padding-left: 0px;
 
-$brief-right-list-height: 27px;
+$brief-right-list-height: 30px;
 $left-width: 600px;
 $right-width: 300px;
 $section-width: $left-width + $right-width;
+$icon-width: 22px;
 
-$h3-title-top: 30px;
+$h3-title-top: 45px;
 $h3-title-bottom: 20px;
+
 $skills-tag-margin-single-side: 10px;
 $skills-tag-width: 172px;
 
-$tech-width: 130px;
-
+$github-link-color: #2277ff;
 $time-color: #777777;
 @mixin showBorder {
   border: $border;

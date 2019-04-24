@@ -1,7 +1,6 @@
 #brief > div {
   display: inline-block;
   vertical-align: middle;
-  // @include showBorder;
   &.left {
     text-align: left;
     width: $left-width;
@@ -10,12 +9,13 @@
       padding-bottom: 15px;
       padding-top: 10px;
       font-weight: normal;
-      font-family: "Roboto Condensed";
+      font-family: "Roboto Condensed", "Microsoft Yahei", sans-serif;
     }
     & > ul > li {
       // description
       font-size: 14px;
       list-style: disc;
+      line-height: 22px;
       list-style-position: inside;
     }
   }
@@ -26,10 +26,10 @@
   &.right li {
     font-size: 13px;
     line-height: $brief-right-list-height;
-    font-family: "Noto Serif";
+    font-family: "Noto Serif", "Microsoft Yahei", serif;
   }
   &.right li > img {
-    width: 25px;
+    width: $icon-width;
     line-height: $brief-right-list-height;
     vertical-align: middle;
     margin-left: 10px;
