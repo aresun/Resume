@@ -10,9 +10,10 @@ div#education {
         font-weight: normal;
         padding-bottom: 2px;
         & + p {
+          // time
           font-size: 13px;
           font-style: italic;
-          color: #777777;
+          color: $time-color;
         }
       }
     }

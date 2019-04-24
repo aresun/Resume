@@ -4,7 +4,7 @@
   display: inline-block;
   margin-top: $page-to-top;
   @include color-border(#000000);
-  padding: $page-padding-top 30px;
+  padding: $page-padding-top $page-padding-left;
   & > .section {
     display: inline-block;
     width: $section-width;

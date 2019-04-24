@@ -1,4 +1,4 @@
-import { briefIntro, skills } from "./js/data";
+import { skills } from "./js/data";
 
 import addImgs from "./js/addImgs";
 import appendBriefs from "./js/addBriefs";
@@ -16,7 +16,7 @@ import "./sass/index.scss";
 
 /* brief section */
 addImgs();
-appendBriefs(briefIntro);
+appendBriefs();
 
 /* skills section */
 appendSkills(skills);
