@@ -12,6 +12,9 @@ import {
 import { addExperiences } from "./js/experiences";
 import { appendEduInfo } from "./js/education";
 import { addProjects } from "./js/projects";
+
+import { addScrollToTopFeature } from "./js/scrollEvent";
+
 import "./sass/index.scss";
 
 /* brief section */
@@ -34,3 +37,5 @@ addExperiences();
 
 /* projects */
 addProjects();
+
+addScrollToTopFeature();

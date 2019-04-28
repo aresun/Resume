@@ -14,6 +14,7 @@ li {
 }
 body {
   text-align: center;
+  min-width: 1300px;
 }
 .colorful {
   background: -webkit-linear-gradient(
@@ -62,4 +63,18 @@ body {
       hsla(71.77, 98.86%, 46.69%, 1) 100%,
       hsla(71.77, 98.86%, 46.69%, 0) 70%
     );
+}
+#top {
+  width: 66px;
+  height: 66px;
+  left: 1100px;
+  // margin-left: 600px;
+  top: 100px;
+  display: none;
+  position: absolute;
+  user-select: none;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 66px;
+  border-radius: 20px;
 }
