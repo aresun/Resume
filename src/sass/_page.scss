@@ -8,18 +8,21 @@
   & > .section {
     display: inline-block;
     width: $section-width;
-    &:hover > h3 {
-      background-color: #000000;
-      > span:first-child {
-        color: #ffffff;
-        left: -330px;
-        & + span {
+    &:hover {
+      & > h3 {
+        background-color: #000000;
+        > span:first-child {
           color: #ffffff;
-          left: 870px;
+          left: -330px;
+          & + span {
+            color: #ffffff;
+            left: 870px;
+          }
         }
       }
     }
     & > h3 {
+      // font-family: "Roboto";
       margin-top: $h3-title-top;
       margin-bottom: $h3-title-bottom;
       width: $section-width;
@@ -29,7 +32,7 @@
       position: relative;
       & > span:first-child {
         position: relative;
-        font-size: 16px;
+        font-size: 15px;
         transition: all 200ms ease;
         left: 0px;
         & + span {

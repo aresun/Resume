@@ -1,11 +1,12 @@
 #experiences {
   & > div.experience {
     // @include showBorder;
-    padding: 0 20px;
+    // padding: 0 20px;
+    // text-align: left;
     & > h5 {
       // job title
       font-size: 16px;
-      padding-bottom: 2px;
+      padding-bottom: 6px;
       & + p {
         // company name
         font-weight: bold;
@@ -16,6 +17,8 @@
           &::after {
             @include innerClearfix;
           }
+          // @include showBorder;
+          padding: 3px 0;
           & > span {
             font-size: 12px;
             font-style: italic;
@@ -31,7 +34,11 @@
           }
           & + ul {
             // work descriptions
+            &:hover {
+              background-color: #fdfdfd;
+            }
             & > li {
+              padding: 3px 0;
               font-size: 13px;
               text-align: left;
               list-style: disc;

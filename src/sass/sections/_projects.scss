@@ -4,10 +4,14 @@
     // @include showBorder;
   }
   & > div.project {
+    padding: 6px;
+    &:hover {
+      background-color: #fdfdfd;
+    }
     & > div:first-child {
-      // * project title
+      // *project title
       border-bottom: 1px solid #000000;
-      padding-bottom: 6px;
+      padding-bottom: 3px;
       &::after {
         @include innerClearfix;
       }
@@ -35,6 +39,7 @@
       & + div {
         // technologies
         text-align: left;
+        padding: 12px 0px;
         > span {
           // tech as tag
           font-family: "Ropa Sans", "Microsof Yahei";
@@ -50,6 +55,7 @@
         }
         & + ul {
           // project descriptions
+          padding: 3px 6px;
           & > li {
             text-align: left;
             padding: 3px 0;
