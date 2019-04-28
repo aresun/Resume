@@ -15,3 +15,103 @@ li {
 body {
   text-align: center;
 }
+.colorful {
+  background: -webkit-linear-gradient(
+      315deg,
+      hsla(204.65, 93.22%, 47.2%, 1) 0%,
+      hsla(204.65, 93.22%, 47.2%, 0) 70%
+    ),
+    -webkit-linear-gradient(65deg, hsla(209.78, 94.71%, 46.9%, 1) 10%, hsla(
+            209.78,
+            94.71%,
+            46.9%,
+            0
+          )
+          80%),
+    -webkit-linear-gradient(135deg, hsla(194.87, 99.79%, 43.1%, 1) 15%, hsla(
+            194.87,
+            99.79%,
+            43.1%,
+            0
+          )
+          80%),
+    -webkit-linear-gradient(205deg, hsla(71.77, 98.86%, 46.69%, 1) 100%, hsla(
+            71.77,
+            98.86%,
+            46.69%,
+            0
+          )
+          70%);
+  background: linear-gradient(
+      135deg,
+      hsla(204.65, 93.22%, 47.2%, 1) 0%,
+      hsla(204.65, 93.22%, 47.2%, 0) 70%
+    ),
+    linear-gradient(
+      25deg,
+      hsla(209.78, 94.71%, 46.9%, 1) 10%,
+      hsla(209.78, 94.71%, 46.9%, 0) 80%
+    ),
+    linear-gradient(
+      315deg,
+      hsla(194.87, 99.79%, 43.1%, 1) 15%,
+      hsla(194.87, 99.79%, 43.1%, 0) 80%
+    ),
+    linear-gradient(
+      245deg,
+      hsla(71.77, 98.86%, 46.69%, 1) 100%,
+      hsla(71.77, 98.86%, 46.69%, 0) 70%
+    );
+}
+.colorfula {
+  background: -webkit-linear-gradient(
+      315deg,
+      hsla(155.7, 93.53%, 40.39%, 1) 0%,
+      hsla(155.7, 93.53%, 40.39%, 0) 70%
+    ),
+    -webkit-linear-gradient(65deg, hsla(142.53, 91.74%, 48.85%, 1) 10%, hsla(
+            142.53,
+            91.74%,
+            48.85%,
+            0
+          )
+          80%),
+    -webkit-linear-gradient(135deg, hsla(108.58, 99.33%, 46.84%, 1) 15%, hsla(
+            108.58,
+            99.33%,
+            46.84%,
+            0
+          )
+          80%),
+    -webkit-linear-gradient(205deg, hsla(172.39, 90.28%, 47.26%, 1) 100%, hsla(
+            172.39,
+            90.28%,
+            47.26%,
+            0
+          )
+          70%);
+  background: linear-gradient(
+      135deg,
+      hsla(155.7, 93.53%, 40.39%, 1) 0%,
+      hsla(155.7, 93.53%, 40.39%, 0) 70%
+    ),
+    linear-gradient(
+      25deg,
+      hsla(142.53, 91.74%, 48.85%, 1) 10%,
+      hsla(142.53, 91.74%, 48.85%, 0) 80%
+    ),
+    linear-gradient(
+      315deg,
+      hsla(108.58, 99.33%, 46.84%, 1) 15%,
+      hsla(108.58, 99.33%, 46.84%, 0) 80%
+    ),
+    linear-gradient(
+      245deg,
+      hsla(172.39, 90.28%, 47.26%, 1) 100%,
+      hsla(172.39, 90.28%, 47.26%, 0) 70%
+    );
+}
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */

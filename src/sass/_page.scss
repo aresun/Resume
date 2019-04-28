@@ -5,6 +5,7 @@
   margin-top: $page-to-top;
   @include color-border(#000000);
   padding: $page-padding-top $page-padding-left;
+  background-color: #ffffff;
   & > .section {
     display: inline-block;
     width: $section-width;
@@ -13,10 +14,10 @@
         background-color: #000000;
         > span:first-child {
           color: #ffffff;
-          left: -330px;
+          left: -370px;
           & + span {
             color: #ffffff;
-            left: 870px;
+            left: 930px;
           }
         }
       }
