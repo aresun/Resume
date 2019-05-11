@@ -1,4 +1,3 @@
-import { l } from "./common";
 import { page, top } from "./const";
 import { createDomWithText } from "./common";
 
